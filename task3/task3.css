@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#gridContainer{
+    width: 400px;
+    height: 400px;
+    margin: 14vh auto;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+}
+div{
+    background-color: orangered;
+    padding: 10px
+}
+.white{
+    background-color: white;
+}

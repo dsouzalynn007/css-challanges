@@ -1,0 +1,78 @@
+body{
+    position: relative;
+}
+#slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+#slider article{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#slider input[type="radio"]{
+    display: none;
+}
+#slider .labelTag{
+	position: absolute;
+    top: 45%;
+    left: 30%;
+    height: 50px;
+    width: 50px;
+    border: white solid;
+    border-radius: 100%;
+    z-index: 4;
+}
+#slider #label2{
+    left: 45%;
+}
+#slider #label3{
+    left: 60%;
+}
+#slider .forMovement{
+    position: absolute;
+    top: 46.5%;
+    left: 31.5%;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 100%;
+    transition: all 2s ease;
+    z-index: 5;
+}
+#same1:checked ~ .forMovement {
+    transform: translateX(0%);
+}
+#same2:checked ~ .forMovement {
+    transform: translateX(170%);
+}
+#same3:checked ~ .forMovement {
+    transform: translateX(340%);
+}
+#slider .forBackground{
+    position: absolute;
+    top: 0;
+    right: 450px;
+    width: 450px;
+    height: 450px;
+    border-radius: 5px;
+	background: burlywood;
+	border-right: 450px solid greenyellow;
+	transition: all 2s ease;
+	/* transform: translateX(0px); */
+}
+#same1:checked ~ .forBackground {
+    transform: translateX(0%);
+}
+#same2:checked ~ .forBackground {
+    transform: translateX(50%);
+}
+#same3:checked ~ .forBackground {
+    transform: translateX(100%);
+}

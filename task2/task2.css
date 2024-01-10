@@ -1,0 +1,85 @@
+
+:root{
+    --letter-color:rgb(150, 85, 85);
+}
+#mainresume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+#mainresume article{
+    width: 400px;
+    height: 400px;
+    background: rgb(251, 186, 107);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mainresume article main{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+}
+#mainresume article main .aside_left{
+    flex-basis: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#mainresume article main .aside_left img{
+    height: 80px;
+    border-radius: 100%;
+}
+#mainresume article main .aside_left h1{
+    color: var(--letter-color);
+    text-transform: capitalize;
+}
+#mainresume article main .aside_left p{
+    color: grey;
+    text-transform: capitalize;
+}
+#mainresume .aside_left header{
+    line-height: 1px;
+}
+#mainresume article main .aside_left button{
+    color: var(--letter-color);
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 5px;
+    background-color: white;
+    border: 1px solid var(--letter-color);
+    border-radius: 20px;
+    padding: 7px 30px;
+    transition: all ease 0.8s;
+}
+#mainresume article main .aside_left button:hover{
+    color: white;
+    background-color: var(--letter-color);
+}
+#mainresume article main .aside_right{
+    flex-basis:35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2px;
+    text-align: center;
+}
+#mainresume article main .aside_right div{
+    height: 100%;
+    background-color: antiquewhite;
+    color: var(--letter-color);
+    transition: all ease 0.9s;
+}
+#mainresume article main .aside_right div:hover{
+    background-color: rgb(221, 198, 169);
+}
+#mainresume article main .aside_right div h1{
+    height: 1px;
+}
